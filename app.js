@@ -13,8 +13,9 @@ app.use(cors());  // Adicionando o uso do cors
 io.on('connection', (socket) => {
   console.log('A user connected');
 
-  socket.on('message', (message) => {
-    io.emit('message', message);  // Broadcast the message to all connected clients
+  socket.on('message', (data) => {
+    const { message, sender } = data;
+    io.emit('message', { message, sender });  // Transmitir a mensagem para todos os clientes com informações do remetente
   });
 
   socket.on('disconnect', () => {
