@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Chat Online</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="chat-container">
     <div class="chat-header">
       <h2>Chat Online</h2>
     </div>
+
     <div class="chat-messages" id="chat-messages"></div>
-    <input type="text" id="message-input" placeholder="Digite sua mensagem...">
-    <button id="send-button">Enviar</button>
+    <div class="box-message">
+      <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+      <button id="emoji-button"><img src="./img/sorriso.png" width="25px" height="25px"/></button>
+      <button id="send-button"><img src="./img/enviar-mensagem.png" width="25px" height="25px"/></button>
+    </div>
+    
+    
   </div>
+
+  <!-- Atualize a lista de emojis no seu HTML -->
+  <div class="emoji-list" id="emoji-list">
+    <span class="emoji" data-emoji="🙂">🙂</span>
+    <span class="emoji" data-emoji="😃">😃</span>
+    <span class="emoji" data-emoji="😔">😔</span>
+    <span class="emoji" data-emoji="😠">😠</span>
+    <span class="emoji" data-emoji="😐">😐</span>
+    <span class="emoji" data-emoji="🤯">🤯</span>
+    <span class="emoji" data-emoji="🤫">🤫</span>
+    <span class="emoji" data-emoji="🙄">🙄</span>
+    <span class="emoji" data-emoji="🥴">🥴</span>
+    <span class="emoji" data-emoji="😎">😎</span>
+    <span class="emoji" data-emoji="😘">😘</span>
+    <span class="emoji" data-emoji="😱">😱</span>
+    <span class="emoji" data-emoji="😳">😳</span>
+    <span class="emoji" data-emoji="🤔">🤔</span>
+    <span class="emoji" data-emoji="🤢">🤢</span>
+    <span class="emoji" data-emoji="🤡">🤡</span>
+    <span class="emoji" data-emoji="🤕">🤕</span>
+    <span class="emoji" data-emoji="👍">👍</span>
+    <span class="emoji" data-emoji="👎">👎</span>
+    <span class="emoji" data-emoji="👋">👋</span>
+    <span class="emoji" data-emoji="❤️">❤️</span>
+    <!-- Adicione mais emojis aqui -->
+  </div>
+
+
+
   <script src="/socket.io/socket.io.js"></script>
   <script src="script.js"></script>
 </body>
