@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const { message, sender } = data;
 
     // Verifique se a mensagem recebida não é da mesma pessoa que você
-    if (sender !== 'Você' && message !== lastSentMessage) {
-      addMessage(sender + ': ' + message, false);
+    if (sender !== 'Você' || message !== lastSentMessage) {
+      addMessage(message, false);
     }
   });
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       socket.emit('message', { message, sender: 'Você' });
       messageInput.value = '';
       lastSentMessage = message; // Atualize a última mensagem enviada
-      addMessage('Você: ' + message, true);
+      addMessage(message, true);
     }
   });
 
