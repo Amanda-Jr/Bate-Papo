@@ -5,7 +5,7 @@ Para acessar o site e experimentar o bate-papo é so acessar o link.
 
 https://bate-papo-cjtr.onrender.com
 
-![image](https://github.com/weep-dev/Bate-Papo/assets/68405619/13f43fa9-3174-4a3f-a086-76d0cd35f929)
+![image](https://github.com/weep-dev/Bate-Papo/assets/68405619/4092a2c1-a815-4db7-83d7-856e5c716c65)
 
 
 ## Informações:
